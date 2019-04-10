@@ -1,0 +1,37 @@
+activeabilities = {
+
+  ["Basic Attack"] = {
+    ["PubName"] = "Basic Attack",
+    ["ArtID"] = "123456",
+    ["AnimationID"] = "123456",
+    ["EnergyCost"] = 10,
+    ["ValidTargets"] = {"Enemy"},
+    ["TargetType"] = "Single",
+    ["Range"] = 3,
+    ["AOE"] = 1,
+    ["HeightTolerance"] = 99999,
+    ["Accuracy"] = 1.0,
+    
+    ["Effect"] = {
+      ["Name"] = "Ouchy ouch",
+      ["Description"] = "Deal damage to target enemy equal to user's attack.",
+      ["Power"] = {
+        ["Type"] = "AlterHP",
+        ["Values"] = {
+          ["Value1"] = {
+            ["ValueName"] = "Attack",
+            ["ValueOwner"] = "attacker",
+            ["ValueDirection"] = "offensive",
+            ["ValueType"] = "integer",
+          },
+          ["Value2"] = {
+            ["ValueName"] = "Defense",
+            ["ValueOwner"] = "defender",
+            ["ValueDirection"] = "defensive",
+            ["ValueType"] = "integer",
+          },  
+      },
+    },
+   ["Description"] = "For game testing purposes",
+  },
+}
